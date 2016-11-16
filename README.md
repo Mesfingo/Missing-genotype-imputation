@@ -13,4 +13,4 @@ The function takes the following 2 arguments:-
     for other kinds of coding.
 
 2. The format of file to be generated after imputation. Two options can be specified:
-   "csv" for a coma delimited file, and "s" for space delimited text file. 
+   "csv" for a coma delimited file, and "space" for space delimited text file. 
