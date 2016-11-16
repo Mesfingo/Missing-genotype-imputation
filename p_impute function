@@ -1,5 +1,4 @@
-
-
+#details can be found in the readme file
 
 p_impute <- function(geno_file, out_format) {
 if (!out_format %in% c("coma", "space")) {
@@ -38,5 +37,4 @@ if (out_format == "coma") {
 write.csv(data, "geno_imputed.csv", row.names = F, quote = F)
   } else {write.table(data, "geno_imputed.txt", row.names = F, quote = F)}
 return(data)
-
 }
