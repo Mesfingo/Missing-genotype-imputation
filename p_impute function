@@ -10,7 +10,7 @@ if (!out_format %in% c("coma", "space")) {
 data_full <- read.table(geno_file, header = T)
 data <- data_full[,-c(1:6) ]
 
-#calculate probabilities for the three genotypes in for each columns
+#calculate probabilities of the three genotypes for each column (SNP)
 n <- nrow(data)
 p_0 <- apply(data, 2, function(x){sum(x == 0, na.rm = T)/(n - sum(is.na(x)))})
 p_1 <- apply(data, 2, function(x){sum(x == 1, na.rm = T)/(n - sum(is.na(x)))})
