@@ -2,7 +2,7 @@
 
 p_impute <- function(geno_file, out_format) {
 if (!out_format %in% c("coma", "space")) {
-  stop("Only be coma or space delimited for the output file format. If other options
+  stop("Only coma or space delimitation allowed for the output file. If other options
        are preffered, the function can be easily be modified")
 }
 
